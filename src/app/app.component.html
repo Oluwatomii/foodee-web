@@ -1,21 +1,103 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
+<body>
+    <div class="navstyle">
+        <nav>
+            <div class="headlogo">
+                <img class ="headerlogo" src="../assets/image/foodeelogo.png" alt="">
+            </div>
+            <ul class="menuclass">
+                <li><a href="#food-container"> Browse Food </a></li>
+                <li><a routerLink='/blog'> Blog </a></li>
+                <li><a href="#cooking-tip-container"> Cooking Guide </a></li>
+                <li><a href="#"> Account </a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="background-slideshow">
+        <div id="slideshow-container">
+            <div id="sliderbox">
+                <img src="../assets/image/foodee.jpg">
+                <img src="../assets/image/burgerslashprice.png">
+                <img src="../assets/image/losangelespromo.jpg">
+                <img src="../assets/image/icecreampromo.jpg">
+            </div>
+        </div>
+    </div>
+        <div id="food-container">
+            <div class="food-grid">
+                <h1 class="foodcontainer-header"> FOOD COLLECTION </h1>
+                <li>
+                    <div class="foodbox">
+                        <div class="foodcontainer1">
+                            <img src="../assets/image/meal1.jpg" style="border-radius: 25px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px">
+                            <br><a><h4 style="word-wrap:initial;">Seasoned Crab garnished with sliced tomatoes</h4></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodbox">
+                        <div class="foodcontainer2">
+                            <img src="../assets/image/meal2.jpg" style="border-radius: 25px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px">
+                            <br><h4 style="word-wrap:initial;">Jollof rice and chicken with side dish: plantain</h4>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodbox">
+                        <div class="foodcontainer3">
+                            <img src="../assets/image/meal3.jpg" style="border-radius: 25px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px">
+                            <br><h4 style="word-wrap:initial;">Bolognese garnished with lime and sliced tomatoes</h4>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="foodbox">
+                        <div class="foodcontainer4">
+                            <img src="../assets/image/meal5.jpg" style="border-radius: 25px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px">
+                            <br><h4 style="word-wrap:initial;">Pizza with pepperoni and sliced olive toppings</h4>
+                        </div>
+                    </div>
+                </li>
+        </div>
+        </div>
+    <div id="cooking-tip-container">
+        <div class="cooking-tip-grid">
+            <h1 class="cookingtip-header">
+                COOKING GUIDE 
+            </h1>
+            <li>
+                <div class="cooking-tip-box">
+                    <div class="cooking-tip-container1">
+                        <video width="320px" height="400px" controls>
+                            <source src="../assets/videos/How to Cook Chicken_ Easy Chicken Recipes for Dinner.mp4">
+                        </video>
+                        <h6> How to cook chicken: Easy chicken recipes for dinner </h6>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cooking-tip-box">
+                    <div class="cooking-tip-container2">
+                        <video width="320px" height="400px" controls>
+                            <source src="../assets/videos/10 Incredibly Useful Cooking Tips - Gordon Ramsay.mp4">
+                        </video>
+                        <h6>10 Incredible useful cooking tips - Gordon Ransay </h6>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cooking-tip-box">
+                    <div class="cooking-tip-container3">
+                        <video width="320px" height="400px" controls>
+                            <source src="../assets/videos/6 Fun Cooking Tricks.mp4">
+                        </video>
+                        <h6>6 Fun Cooking Tricks</h6>
+                    </div>
+                </div>
+            </li>
+        </div>
+    </div>
+    <footer>
+        <h3 style="text-align: center; color: rgba(0,0,0,0.75); font-family: Arial, Helvetica, sans-serif; margin-top: 1px;"> Tomisin's inc</h3>
+    </footer>
+</body>
 <router-outlet></router-outlet>

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  expand(){
+    document.getElementById('dropdown-btn').classList.toggle('tap');
+  }
   title = 'foodee';
 }
